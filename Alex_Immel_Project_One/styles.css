@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-variant: small-caps;
+    letter-spacing: 9px;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: garamond, serif;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+}
+
+h3 {
+    color: white;
+    padding: 5px;
+    margin: 3px;
+    text-decoration: none;
+    font-family: garamond, serif;
+    letter-spacing: 3px;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: black;
+    border-radius: 4px;
+}
+
+/* Classes */
+
+.box {
+    text-align: center;
+    margin-top: 3px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: white;
+}
+
+.HeadingSection {
+    background-color: #000;
+    padding: auto;
+    border-color: none;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.column1 {
+    float: left;
+    position: relative;
+    width: 66.666%;
+    padding: 20px;
+}
+
+.column2 {
+    float: left;
+    position: relative;
+    width: 33.33%;
+    padding: 20px;
+}
+
+.flex-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.order-1 {
+    order: 0;
+}
+
+.order-2 {
+    order: 1;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.pro-pic {
+    width: 300px;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 4px;
+}
+
+.contact-info {
+    line-height: 12px;
+}
+
+/* ids */
+
+#BigHead {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+#MainMenu {
+    padding: 5px;
+    background-color: white;
+}
+
+#MainMenu ul {
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#MainMenu li {
+    display: inline;
+    list-style-type: none;
+}
+
+#MainMenu li a {
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    font-family: garamond, serif;
+    letter-spacing: 3px;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.1em;
+    background-color: black;
+    border-radius: 4px;
+}
+
+#SkillsText {
+    text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+    .column {
+        width: 100%;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order-1 {
+        order: 0;
+    }
+
+    .order-2 {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        width: 100%;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .order-1 {
+        order: 0;
+    }
+
+    .order-2 {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .column {
+        width: 100%;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order-1 {
+        order: 0;
+    }
+
+    .order-2 {
+        order: 1;
+    }
+}
